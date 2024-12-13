@@ -13,6 +13,8 @@ class NewsApp extends StatefulWidget {
 
 class _NewsAppState extends State<NewsApp> {
 
+ 
+
   Future<NewsModel>fetchNews() async{
      
      final url = "https://newsapi.org/v2/everything?q=tesla&from=2024-11-13&sortBy=publishedAt&apiKey=e17e0929e5734ce38ae87013c2e894d8";
@@ -27,6 +29,12 @@ class _NewsAppState extends State<NewsApp> {
      else{
           return NewsModel();
      }
+  }
+
+   @override
+  void initState() {
+    super.initState();
+    
   }
   @override
   Widget build(BuildContext context) {
