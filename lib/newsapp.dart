@@ -43,6 +43,9 @@ class _NewsAppState extends State<NewsApp> {
                      leading: CircleAvatar(
                        backgroundImage: NetworkImage("${snapshot.data!.articles![index].urlToImage}"),
                      ),
+
+                     title: Text("${snapshot.data!.articles![index].title}"),
+                     subtitle: Text("${snap}"),
                   );
            },);
         }),
