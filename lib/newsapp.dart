@@ -34,7 +34,7 @@ class _NewsAppState extends State<NewsApp> {
    @override
   void initState() {  
     super.initState();
-    fetchNews();     
+    fetchNews();      
     
   }
   @override
