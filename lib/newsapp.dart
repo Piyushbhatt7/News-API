@@ -35,7 +35,7 @@ class _NewsAppState extends State<NewsApp> {
   void initState() {  
     super.initState();
     fetchNews();     
-    
+       
   }
   @override
   Widget build(BuildContext context) {
