@@ -39,7 +39,11 @@ class _NewsAppState extends State<NewsApp> {
         body: FutureBuilder(future: fetchNews(), builder: (context, snapshot){
            
            return ListView.builder(itemBuilder: (context, index){
-                  return
+                  return ListTile(
+                     leading: CircleAvatar(
+                       backgroundImage: NetworkImage("${snapshot.data!.articles![index].urlToImage}"),
+                     ),
+                  );
            },);
         }),
     );
