@@ -45,7 +45,7 @@ class _NewsAppState extends State<NewsApp> {
                      ),
 
                      title: Text("${snapshot.data!.articles![index].title}"),
-                     subtitle: Text("${snap}"),
+                     subtitle: Text("${snapshot.data!.articles![index].description}"),
                   );
            },);
         }),
