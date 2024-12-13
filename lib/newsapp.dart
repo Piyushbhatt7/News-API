@@ -42,6 +42,7 @@ class _NewsAppState extends State<NewsApp> {
     return Scaffold(
       appBar: AppBar(
         title: Text("News App"),
+        backgroundColor: Colors.black,
         centerTitle: true,
       ),
         
