@@ -15,7 +15,7 @@ class _NewsAppState extends State<NewsApp> {
 
   Future<NewsModel>fetchNews() async{
      
-     final url = "https://newsapi.org/v2/everything?q=tesla&from=2024-11-13&sortBy=publishedAt&apiKey=e17e0929e5734ce38ae87013c2e894d8"
+     final url = "https://newsapi.org/v2/everything?q=tesla&from=2024-11-13&sortBy=publishedAt&apiKey=e17e0929e5734ce38ae87013c2e894d8";
 
      var response = await http.get(Uri.parse(url));
 
@@ -47,7 +47,7 @@ class _NewsAppState extends State<NewsApp> {
                      title: Text("${snapshot.data!.articles![index].title}"),
                      subtitle: Text("${snapshot.data!.articles![index].description}"),
                   );
-           },);
+           }, itemCount: snapshot.data!.articles!.length,);
         }),
     );
   }
