@@ -41,7 +41,7 @@ class _NewsAppState extends State<NewsApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("News App"),
+        title: Text("News App", style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
